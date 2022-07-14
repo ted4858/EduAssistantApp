@@ -53,6 +53,7 @@ public class ReportMain extends AppCompatActivity {
             }
         });
 
+
         //리스터를 걸겠다.
         FloatingActionButton btnwrite=findViewById(R.id.btnwrite);
         btnwrite.setOnClickListener(new View.OnClickListener() {
