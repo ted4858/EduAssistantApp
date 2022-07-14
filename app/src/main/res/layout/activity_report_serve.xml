@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReportMain">
+    android:orientation="vertical"
+    >
+
     <LinearLayout
-        android:id="@+id/titleBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
@@ -47,24 +48,4 @@
             />
     </LinearLayout>
 
-    <ListView
-        android:id="@+id/list"
-        android:layout_width="match_parent"
-        android:layout_height="687dp"
-        android:layout_below="@+id/titleBar"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="0dp"
-        android:background="#83F7F3F3"></ListView>
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnwrite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:srcCompat="@drawable/plus"
-        android:backgroundTint="#FFEB3B"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="20sp"
-        android:layout_marginRight="30sp"/>
-</RelativeLayout>
+</LinearLayout>
