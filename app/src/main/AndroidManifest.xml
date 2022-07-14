@@ -17,7 +17,7 @@
             android:name=".ReportMain"
             android:exported="false" />
         <activity
-            android:name=".JopSite"
+            android:name=".JobSite"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

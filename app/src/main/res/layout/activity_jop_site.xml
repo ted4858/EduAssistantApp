@@ -1,9 +1,268 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".JopSite">
+    android:orientation="vertical"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" ◀ "
+            android:textSize="32dp"
+            android:textColor="#5A5ADC"
+            android:background="#DED5ED"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:clickable="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Job Sites"
+            android:textSize="32dp"
+            android:textColor="#5A5ADC"
+            android:background="#DED5ED"
+            android:gravity="center"
+            android:paddingRight="54dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아이콘을 클릭하면 해당 사이트로 이동합니다!"
+        android:textSize="14dp"
+        android:textColor="#000000"
+        android:background="#BAD898"
+        android:gravity="center_horizontal"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="18dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. 워크넷"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:id="@+id/worknetIg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/worknet"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. 잡코리아"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:id="@+id/jobkoreaIg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jobkorea"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. 사람인"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:id="@+id/saraminIg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/saramin"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. 커리어"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:id="@+id/careerIg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/career"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. 스카우트"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:id="@+id/scoutIg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scout"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. 인디드"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:id="@+id/indeedIg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/indeed"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7. 벼룩시장"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:id="@+id/fleamarketIg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fleamarket"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8. 잡플래닛"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:id="@+id/jobplanetIg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jobplanet"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9. 알리오"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:id="@+id/alioIg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/alio"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10. 피플앤잡"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:id="@+id/peoplenjobIg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/peoplenjob"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11. 월드잡"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:id="@+id/worldjobIg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/worldjob"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12. 나라일터"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:id="@+id/narailteoIg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/narailteo"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:clickable="true"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
