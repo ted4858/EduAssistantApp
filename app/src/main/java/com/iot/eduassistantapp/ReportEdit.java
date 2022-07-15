@@ -12,6 +12,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,9 +26,9 @@ public class ReportEdit extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test);
+        setContentView(R.layout.activity_report_edit);
 
-        getSupportActionBar().setTitle("메모 읽기");
+        getSupportActionBar().setTitle("Edit the report");
         //뒤로가기
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -41,10 +42,10 @@ public class ReportEdit extends AppCompatActivity {
             TextView txtwdate=findViewById(R.id.txtwdate);
             txtwdate.setText("작성일:"+cursor.getString(2));
             TextView edtcontent=findViewById(R.id.edtcontent);
-            edtcontent.setText("작성내용:"+cursor.getString(1));
+            edtcontent.setText(cursor.getString(1));
         }
 
-        FloatingActionButton btnsave=findViewById(R.id.btnsave);
+        Button btnsave = findViewById(R.id.btnsave);
         btnsave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,6 +67,15 @@ public class ReportEdit extends AppCompatActivity {
             }
         });
         //Toast.makeText(UpdateActivity.this,"_id="+_id,Toast.LENGTH_SHORT).show();
+
+        Button btnCancel = findViewById(R.id.btnCancel);
+
+        btnCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
     //뒤로가기 옵션 버튼에 이벤트주기
     @Override

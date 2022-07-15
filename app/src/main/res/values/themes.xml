@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.EduAssistantApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#DED5ED</item>
-        <item name="colorPrimaryVariant">#DED5ED</item>
+        <item name="colorPrimary">#AC57BB</item>
+        <item name="colorPrimaryVariant">@color/black</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

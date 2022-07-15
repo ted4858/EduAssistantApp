@@ -4,28 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1DEA7"
+    android:background="@drawable/note"
     android:orientation="vertical">
-
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        >-->
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="제목 : "-->
-<!--            android:textSize="20dp"-->
-<!--            android:textStyle="bold"-->
-<!--            android:textColor="#000000"/>-->
-<!--        <EditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="제목을 입력하세요"-->
-<!--            android:textColorHint="#ffffff"-->
-<!--            android:id="@+id/edtTitle"-->
-<!--            android:layout_weight="1"/>-->
-<!--    </LinearLayout>-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="내용을 입력하세요"
-            android:textColorHint="#ffffff"
+            android:textColorHint="#C48D64D6"
             android:id="@+id/edtcontent"
             android:gravity="top"
             android:layout_weight="1"/>
@@ -59,9 +39,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:layout_marginHorizontal="20dp"
+            android:layout_margin="20dp"
             android:text="취소"
-            android:textSize="18dp"
+            android:textSize="30dp"
             />
         <Button
             android:id="@+id/btnsave"
@@ -69,9 +49,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:layout_marginHorizontal="20dp"
+            android:layout_margin="20dp"
             android:text="저장"
-            android:textSize="18dp"
+            android:textSize="30dp"
             />
     </LinearLayout>
 

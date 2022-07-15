@@ -54,8 +54,9 @@
         android:layout_height="687dp"
         android:layout_below="@+id/titleBar"
         android:layout_alignParentEnd="true"
+        android:dividerHeight="5dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="0dp"
-        android:background="#83F7F3F3"></ListView>
+        android:background="@drawable/note"></ListView>
 
 </RelativeLayout>
