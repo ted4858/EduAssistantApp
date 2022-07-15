@@ -7,23 +7,25 @@
     tools:context=".ReportEdit"
     android:layout_margin="10sp"
     android:background="#F1DEA7">
+
     <TextView
+        android:id="@+id/txtwdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtwdate"
-        android:text="작성일"
         android:padding="10sp"
-        android:textSize="15sp"
-        android:textColor="#000000"/>
+        android:text="작성일"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
     <EditText
-        android:layout_below="@id/txtwdate"
+        android:id="@+id/edtcontent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:hint="메모내용을 입력하세요"
+        android:layout_below="@id/txtwdate"
         android:gravity="top"
+        android:hint="메모내용을 입력하세요"
         android:padding="10sp"
-        android:textColorHint="#ffffff"
-        android:id="@+id/edtcontent"/>
+        android:textColorHint="#ffffff" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnsave"

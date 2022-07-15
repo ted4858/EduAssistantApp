@@ -23,9 +23,6 @@
             android:name=".ReportMain"
             android:exported="false" />
         <activity
-            android:name=".ReportServe"
-            android:exported="false" />
-        <activity
             android:name=".JobSite"
             android:exported="false" />
         <activity

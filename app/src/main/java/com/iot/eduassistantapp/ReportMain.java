@@ -53,10 +53,8 @@ public class ReportMain extends AppCompatActivity {
             }
         });
 
-
-        //리스터를 걸겠다.
-        FloatingActionButton btnwrite=findViewById(R.id.btnwrite);
-        btnwrite.setOnClickListener(new View.OnClickListener() {
+        TextView writeButton = findViewById(R.id.writeButton);
+        writeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //activity이동
@@ -64,7 +62,6 @@ public class ReportMain extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 
     class MyAdapter extends CursorAdapter{
@@ -97,7 +94,7 @@ public class ReportMain extends AppCompatActivity {
                 public void onClick(View v) {
                     //CONFRIM
                     AlertDialog.Builder box=new AlertDialog.Builder(ReportMain.this);
-                    box.setMessage(_id+"을(를) 삭제하시겠습니까?");
+                    box.setMessage("삭제하시겠습니까?");
                     box.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {

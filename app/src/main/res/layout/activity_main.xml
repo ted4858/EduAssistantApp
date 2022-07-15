@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="#DED5ED"
+    android:weightSum="10"
     >
 
     <TextView
@@ -16,26 +17,39 @@
         android:text="Job Helper"
         android:textSize="42dp"
         android:textStyle="italic"
-        android:layout_marginBottom="100dp"
+        android:layout_weight="2"
+        android:layout_gravity="center"
         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/goToReportMainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="32dp"
+            android:background="#D59090"
+            android:text="Report"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/goToReportMainButton"
-        android:layout_width="wrap_content"
-        android:layout_height="77dp"
-        android:layout_marginBottom="40dp"
-        android:background="#D59090"
-        android:text="Report"
-        android:textSize="18dp"
-        />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/goToJobSiteButton"
-        android:layout_width="wrap_content"
-        android:layout_height="87dp"
-        android:background="#72A6BF"
-        android:text="Job Site"
-        android:textSize="18dp"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/goToJobSiteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#72A6BF"
+            android:paddingVertical="32dp"
+            android:text="Job Site"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
 
 </LinearLayout>

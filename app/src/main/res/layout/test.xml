@@ -7,25 +7,34 @@
     android:background="#F1DEA7"
     android:orientation="vertical">
 
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        >-->
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="제목 : "-->
-<!--            android:textSize="20dp"-->
-<!--            android:textStyle="bold"-->
-<!--            android:textColor="#000000"/>-->
-<!--        <EditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="제목을 입력하세요"-->
-<!--            android:textColorHint="#ffffff"-->
-<!--            android:id="@+id/edtTitle"-->
-<!--            android:layout_weight="1"/>-->
-<!--    </LinearLayout>-->
+    <TextView
+        android:id="@+id/txtwdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="작성일"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목 : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="제목을 입력하세요"
+            android:textColorHint="#ffffff"
+            android:id="@+id/edtTitle"
+            android:layout_weight="1"/>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -74,5 +83,5 @@
             android:textSize="18dp"
             />
     </LinearLayout>
-
+    
 </LinearLayout>

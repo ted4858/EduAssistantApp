@@ -4,9 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -24,16 +27,16 @@ public class ReportWrite extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_report_write);
 
-        getSupportActionBar().setTitle("메모 입력");
+        getSupportActionBar().setTitle("Report Writing");
         //뒤로가기
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
 
         helper=new ReportSave(this);
         db=helper.getWritableDatabase();
 
+        Button btnsave = findViewById(R.id.btnsave);
+
         //저장 버튼에 이벤트 달기
-        FloatingActionButton btnsave=findViewById(R.id.btnsave);
         btnsave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,7 +51,6 @@ public class ReportWrite extends AppCompatActivity {
                 sdf.setTimeZone(TimeZone.getTimeZone("Asia/Seoul"));
                 String strnow=sdf.format(now);
 
-
                 String sql="insert into memo(content,wdate) values(";
                 sql += "'" + strcontent + "',";
                 sql += "'" + strnow + "')";
@@ -58,8 +60,16 @@ public class ReportWrite extends AppCompatActivity {
             }
         });
 
+        Button btnCancel = findViewById(R.id.btnCancel);
 
+        btnCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
+
     //뒤로가기 옵션 버튼에 이벤트주기
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

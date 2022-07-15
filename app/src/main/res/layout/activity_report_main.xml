@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/note"
     tools:context=".ReportMain">
     <LinearLayout
         android:id="@+id/titleBar"
@@ -56,15 +57,5 @@
         android:layout_marginTop="1dp"
         android:layout_marginEnd="0dp"
         android:background="#83F7F3F3"></ListView>
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnwrite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:srcCompat="@drawable/plus"
-        android:backgroundTint="#FFEB3B"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="20sp"
-        android:layout_marginRight="30sp"/>
+
 </RelativeLayout>

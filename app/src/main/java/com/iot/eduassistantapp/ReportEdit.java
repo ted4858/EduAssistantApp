@@ -25,7 +25,7 @@ public class ReportEdit extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_report_edit);
+        setContentView(R.layout.test);
 
         getSupportActionBar().setTitle("메모 읽기");
         //뒤로가기
